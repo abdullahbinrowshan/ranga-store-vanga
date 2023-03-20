@@ -20,7 +20,6 @@ const showProducts = (products) => {
 
    const allProducts = products.map((pd) => pd);
    for (const product of allProducts) {
-      // console.log(product);
       const image = product.category.image;
       const div = document.createElement('div');
       div.classList.add('product');
@@ -61,7 +60,6 @@ const showProductDetails = (product_id) => {
 };
 
 const showProductDetailsInModal = (product_details) => {
-   console.log(product_details);
    setInnerText('exampleModalLabel', product_details.title);
    setInnerText('productId', product_details.id);
    setInnerText('modal_body', product_details.description);
